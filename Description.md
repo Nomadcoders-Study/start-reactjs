@@ -24,4 +24,9 @@
 #### yarn
 - yarn을 이용해 react 앱을 실행시(runserver) 소스코드를 변경 하는 순간 yarn이 컴파일을 시작하고 수정된 내용을 반영하여 서버에 빌드 한다.
 
+```
+[ 참고 ] git tag 추가하기
+➜  movie_app git:(master) git tag ch1_end
+➜  movie_app git:(master) git push origin master --tags
+```
 
