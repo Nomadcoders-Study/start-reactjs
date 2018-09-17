@@ -26,6 +26,14 @@
 
 ```
 [ 참고 ] git tag 추가하기
+
+tag 푸쉬하기
+
+git push 원격저장소명 태그명
+git push 원격저장소명 로컬브랜치명 --tags
+
+원격저장소에 특정태그를 푸쉬하려면 첫번째 명령어를 사용하면 되고 로컬브랜치의 모든 태그를(태그는 브랜치에 종속적이므로) 푸쉬하려면 두번째 명령어를 사용하면 됩니다.
+
 ➜  movie_app git:(master) git tag ch1_end
 ➜  movie_app git:(master) git push origin master --tags
 ```
