@@ -75,3 +75,30 @@ export default Movie;
 
 > props
 
+> 컴포넌트 간 데이터 전송
+```
+const movieTitle = [
+  ...
+]
+
+const movieImage = [
+  ...
+]
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Movie title={movieTitle[0]} poster={movieImage[0]}/>
+        <Movie title={movieTitle[2]} poster={movieImage[2]}/>
+        <Movie title={movieTitle[1]} poster={movieImage[1]}/>
+        <Movie title={movieTitle[3]} poster={movieImage[3]}/>
+        <Movie title={movieTitle[4]} poster={movieImage[4]}/>
+        <Movie title={movieTitle[5]} poster={movieImage[5]}/>
+        <Movie title={movieTitle[6]} poster={movieImage[6]}/>
+        <Movie title={movieTitle[7]} poster={movieImage[7]}/>
+      </div>
+    );
+  }
+}
+```
