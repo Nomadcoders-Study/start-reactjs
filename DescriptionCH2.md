@@ -89,6 +89,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        // 각 컴포넌트 마다 전달할 값을 props 프로퍼티로 셋팅하여 하위 컴포넌트로 전달 한다.
         <Movie title={movieTitle[0]} poster={movieImage[0]}/>
         <Movie title={movieTitle[2]} poster={movieImage[2]}/>
         <Movie title={movieTitle[1]} poster={movieImage[1]}/>
@@ -97,6 +98,27 @@ class App extends Component {
         <Movie title={movieTitle[5]} poster={movieImage[5]}/>
         <Movie title={movieTitle[6]} poster={movieImage[6]}/>
         <Movie title={movieTitle[7]} poster={movieImage[7]}/>
+      </div>
+    );
+  }
+}
+```
+
+## 2-3 Lists width .map
+
+> .map 은 array(list) 객체를 컴포넌트 내에서 순환하며 사용할 수 있도록 해준다.  
+> - python의 for과 유사하다 ex) for movie in movies: ...
+
+```
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        // 데이터가 담긴 movies 객체를 순환하며 각각의 row data 를 별도의 변수(movie)에 담아 활용 할 수 있게 해준다. ( array/list 객체를 순환하는 것이 포인트. )
+        // python의 for과 유사하다 ex) for movie in movies: ...
+        {movies.map(movie => {
+          return <Movie title={movie.title} poster={movie.poster}/>
+        })}
       </div>
     );
   }
