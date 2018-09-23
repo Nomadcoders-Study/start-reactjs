@@ -66,7 +66,7 @@ class MoviePoster extends Component {
 export default Movie;
 ```
 
-![결과물](./DescImages/ch2-1-001.png)
+![결과물](../../DescImages/ch2-1-001.png)
 
 
 ## 2-2 Dataflow with Props
