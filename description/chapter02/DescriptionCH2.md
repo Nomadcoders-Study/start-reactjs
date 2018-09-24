@@ -71,11 +71,13 @@ export default Movie;
 
 ## 2-2 Dataflow with Props
 
-> state
+> state  
+ : 컴포넌트에서 유동적인 데이터를 다룰 때 사용
 
-> props
+> props  
+ : 컴포넌트에서 사용 할 데이터 중 변동되지 않는 데이터를 다룰 때 사용. 
 
-> 컴포넌트 간 데이터 전송
+#### 컴포넌트 간 데이터 전송
 ```
 const movieTitle = [
   ...
