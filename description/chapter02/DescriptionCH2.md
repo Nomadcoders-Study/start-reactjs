@@ -126,3 +126,16 @@ class App extends Component {
   }
 }
 ```
+
+## 2-4 Validating Props with PropTypes
+
+#### Install Prop-Types with npm:
+
+> npm install --save prop-types 
+
+
+
+#### Install Prop-Types with Yarn:
+
+> yarn add prop-types
+
