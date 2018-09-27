@@ -129,16 +129,6 @@ class App extends Component {
 
 ## 2-4 Validating Props with PropTypes
 
-#### Install Prop-Types with npm:
-
-> npm install --save prop-types 
-
-
-
-#### Install Prop-Types with Yarn:
-
-> yarn add prop-types
-
 #### map의 고유한 index 활용하기
 
 > 순환하는 map 내에서 index 호출을 통해 해당 로우 데이터의 고유한 키를 활용 할 수 있다.  
@@ -155,3 +145,34 @@ ex) python의 enumerate()와 유사하다고 이해 하면 된다.
 for index, movie in enumerate(movies):
     print(index, movie)
 ```
+
+#### Install Prop-Types with npm:
+
+> npm install --save prop-types 
+
+#### props의 데이터 타입 지정하기
+
+> 컴포넌트에 전달 되는 props 데이터의 타입을 React.propTypes.데이터타입 으로 지정할 수 있다.
+
+```
+...
+import PropTypes from 'prop-types';
+...
+
+class Movie extends Component{
+
+    static propTypes = {
+        title: PropTypes.string,
+        poster: PropTypes.string
+    }
+
+    ...
+=> 부모 컴포넌트가 데이터를 보내면 PropTypes로 string 이라는 것을 체크 할 수 있다.
+   또는 PropTypes.string.isRequired 를 통해 필수 값으로 설정 할 수 있다.
+```
+
+
+#### Install Prop-Types with Yarn:
+
+##### propType을 인식 할 수 없다고 한다는 오류가 발생 한다면!!!
+> yarn add prop-types
