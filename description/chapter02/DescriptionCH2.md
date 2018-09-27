@@ -139,3 +139,19 @@ class App extends Component {
 
 > yarn add prop-types
 
+#### map의 고유한 index 활용하기
+
+> 순환하는 map 내에서 index 호출을 통해 해당 로우 데이터의 고유한 키를 활용 할 수 있다.  
+> .map( 변수, index => ... ) 
+
+```
+{movies.map((movie, index) => {
+  return <Movie title={movie.title} poster={movie.poster} key={index}/>
+})}
+```
+
+ex) python의 enumerate()와 유사하다고 이해 하면 된다.
+```
+for index, movie in enumerate(movies):
+    print(index, movie)
+```
