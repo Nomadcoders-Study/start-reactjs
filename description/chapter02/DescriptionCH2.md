@@ -169,6 +169,7 @@ class Movie extends Component{
     ...
 => 부모 컴포넌트가 데이터를 보내면 PropTypes로 string 이라는 것을 체크 할 수 있다.
    또는 PropTypes.string.isRequired 를 통해 필수 값으로 설정 할 수 있다.
+   즉, 부모 컴포넌트에서 얻는 정보의 종류가 무엇인지, 
 ```
 
 
