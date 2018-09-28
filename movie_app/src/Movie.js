@@ -21,6 +21,10 @@ class Movie extends Component{
 }
 
 class MoviePoster extends Component {
+
+    static propTypes = {
+        poster: PropTypes.string.isRequired
+    }
     render(){
         console.log(this.props.poster)
         return (
