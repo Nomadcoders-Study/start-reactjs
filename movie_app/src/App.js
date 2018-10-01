@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Movie from './Movie';
 
@@ -46,8 +45,10 @@ class App extends Component {
 
   componentDidMount(){
     setTimeout(() => {
-      this.state.greeting = 'something'
-    }, 5000)
+      this.setState({
+        greeting: 'Hello again!!'
+      })
+    }, 2000)
   }
 
   render() {

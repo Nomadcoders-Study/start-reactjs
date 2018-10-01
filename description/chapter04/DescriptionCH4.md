@@ -26,17 +26,13 @@ class App extends Component {
   
 ---
 
-#### 활용 예 + DidMount
+## state 변경하기
 
-> 컴포넌트가 mount 되면 5초를 기다리고, greeting을 업데이트 하기.
+> : 컴포넌트가 mount 되면 5초를 기다리고, greeting을 업데이트 하기.
 
-```
+### 잘 못된 state 변경 방법
 
-```
-
-## 주의사항
-
-### 1. state를 직접적으로 변경하면 안된다.  
+> state를 직접적으로 변경하면 안된다.  
 
 ```
 class App extends Component {
@@ -66,3 +62,27 @@ printWarnings @ webpackHotDevClient.js:138`
 
 `render LifeCycle : componentWillMount() -> render() -> componentDidMount()`
 
+### 올바른 state 변경 방법
+
+> setState를 사용하여 새로운 state를 셋팅 한다.
+
+```
+class App extends Component {
+
+  state = {
+    greeting: 'Hello!'
+  }
+
+  componentDidMount(){
+    setTimeout(() => {
+      this.setState({
+        greeting: 'Hello again!!'
+      })
+    }, 2000)
+  }
+
+  render() {
+    return (
+```
+
+> state를 변경할 때는 setState를 사용하여 업데이트 하며, 업데이트 때마다 render가 작동 하게 된다.
