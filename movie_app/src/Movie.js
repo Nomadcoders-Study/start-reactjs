@@ -10,7 +10,6 @@ class Movie extends Component{
     }
 
     render(){
-        console.log(this.props)
         return(
             <div>
                 <MoviePoster poster={ this.props.poster }/>
@@ -26,7 +25,6 @@ class MoviePoster extends Component {
         poster: PropTypes.string.isRequired
     }
     render(){
-        console.log(this.props.poster)
         return (
             <img src={ this.props.poster } width="150px"/>
         )
