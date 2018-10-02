@@ -43,7 +43,10 @@ class App extends Component {
   }
 
   componentDidMount(){
-    
+    //setTimeout 00 시간 뒤 해당 작업을 시작하겠다.
+    setTimeout(() => {
+      console.log('hello')
+    }, 1000)
   }
 
   render() {
