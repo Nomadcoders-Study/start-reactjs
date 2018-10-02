@@ -43,9 +43,16 @@ class App extends Component {
   }
 
   componentDidMount(){
-    //setTimeout 00 시간 뒤 해당 작업을 시작하겠다.
     setTimeout(() => {
-      console.log('hello')
+      this.setState({
+        movies: [
+          ...this.state.movies,
+          {
+            title: "Trainspotting",
+            poster: "http://img.ezmember.co.kr/cache/board/2017/11/15/c8da162980acf7a05b5d3d1fc4a6960f.jpg"
+          }
+        ]
+      })
     }, 1000)
   }
 
