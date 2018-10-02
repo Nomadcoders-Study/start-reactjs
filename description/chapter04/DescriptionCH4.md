@@ -86,3 +86,7 @@ class App extends Component {
 ```
 
 > state를 변경할 때는 setState를 사용하여 업데이트 하며, 업데이트 때마다 render가 작동 하게 된다.
+
+
+## 4-2 Practicing this.setState()
+
