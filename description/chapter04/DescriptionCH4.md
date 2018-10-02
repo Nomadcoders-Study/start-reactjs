@@ -90,3 +90,25 @@ class App extends Component {
 
 ## 4-2 Practicing this.setState()
 
+> setTimeout : 00 시간 뒤 해당 작업을 시작하겠다.  
+
+```
+    setTimeout(() => {
+      console.log('hello')
+    }, 1000)
+```
+1초 뒤 console 로그에 hello 출력
+
+#### ?? 함수 선언시 function을 명시하지 않고 => 로 간소화 할 수 있다.
+```
+  과거 자바스크립트 :
+    setTimeout(function() {
+      console.log('hello')
+    }, 1000)
+    
+  최신 자바스크립트 :
+    setTimeout(() => {
+      console.log('hello')
+    }, 1000)
+```
+
