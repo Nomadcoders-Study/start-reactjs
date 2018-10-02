@@ -6,7 +6,6 @@ import Movie from './Movie';
 class App extends Component {
 
   state = {
-    greeting: 'Hello!',
     movies: [
       {
         title: "아이언맨 1",
@@ -44,17 +43,12 @@ class App extends Component {
   }
 
   componentDidMount(){
-    setTimeout(() => {
-      this.setState({
-        greeting: 'Hello again!!'
-      })
-    }, 2000)
+    
   }
 
   render() {
     return (
       <div className="App">
-        {this.state.greeting}
         {this.state.movies.map((movie, index) => {
           return <Movie title={movie.title} poster={movie.poster} key={index}/>
         })}
