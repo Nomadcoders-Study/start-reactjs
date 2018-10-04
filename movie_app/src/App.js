@@ -53,7 +53,7 @@ class App extends Component {
           }
         ]
       })
-    }, 1000)
+    }, 5000)
   }
 
   render() {
