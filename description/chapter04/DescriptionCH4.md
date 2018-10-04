@@ -153,3 +153,59 @@ test(1, 2, 3, 4, 5);
 
 #### API 콜을 타임아웃 기능으로 유사하게 구현하기!!
 
+1. 기본 state는 비우고 setTimeout 에 setState를 통해 특정 시간이 지나면 state에 데이터를 저장 하도록한다.
+
+> 첫번째 렌더링이 진행 되면 DidMount 과정까지 진행되고,  
+DidMount 될 때 setState 를 통해 데이터를 state에 업데이트 하고,  
+state에 변화가 일어났기 때문에 render 함수를 재 실행 하여 컴포넌트를 다시 렌더링 하게 된다.
+
+```
+state = {
+    
+  }
+
+  componentDidMount(){
+    setTimeout(() => {
+      this.setState({
+        movies: [
+          {
+            title: "아이언맨 1",
+            poster: "http://thumbnail.egloos.net/600x0/http://pds27.egloos.com/pds/201804/20/59/c0225259_5ad995f0aa663.jpg"
+          },
+          {
+            ...
+        ]
+      })
+    }, 5000)
+  }
+```
+
+2. movie 리스트를 렌더링 하는 함수 코딩
+
+> _renderMovies 함수를 실행하면 현재 state 에 저장된 데이터를 map을 통하여 데이터를 렌더링 하는 소스를 변수에 담아 리턴 하도록 한다.
+
+```
+_renderMovies = () => {
+    const movies = this.state.movies.map((movie, index) => {
+      return <Movie title={movie.title} poster={movie.poster} key={index}/>
+    })
+    return movies
+  }
+```
+
+!? 함수 앞의 _는 리액트 내장 함수와 직접 개발한 함수의 차이를 구분하기 위해 표기 하였다.
+
+3. render 함수가 실행 될 때 state 내부의 값을 체크하여 값이 있다면 _renderMovies 함수를 실행, 값이 없다면 'Loading 메시지만 보게 될 것이다.
+
+> { this.state.movies ? this._renderMovies() : 'Loading'}  
+state에 movies 가 들어있다면 ? _renderMovies() 를 실행하여 렌더링을 하고, 그렇지 않으면 Loading 메시지를 출력 하겠다.
+
+```
+render() {
+    return (
+      <div className="App">
+        { this.state.movies ? this._renderMovies() : 'Loading'}
+      </div>
+    );
+  }
+```
