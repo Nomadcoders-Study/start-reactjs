@@ -148,3 +148,8 @@ fucntion test(x, ...y) {
 
 test(1, 2, 3, 4, 5);
 ```
+
+## 4-3 Loading States
+
+#### API 콜을 타임아웃 기능으로 유사하게 구현하기!!
+
