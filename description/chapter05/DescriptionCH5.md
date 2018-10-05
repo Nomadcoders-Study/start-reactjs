@@ -23,3 +23,25 @@ class MoviePoster extends Component {
     }
 }
 ```
+
+### Dumb Components
+
+- 컴포넌트 선언을 function으로 한다.
+- props 만 가지고 있다.
+- Lifecycle이 없다.
+
+```
+function Movie({title, poster}) {
+    return(
+        <div>
+            <MoviePoster poster={ poster }/>
+            <h1>{ title }</h1>
+        </div>
+    )
+}
+
+Movie.propTypes = {
+    title: PropTypes.string.isRequired,
+    poster: PropTypes.string.isRequired
+}
+```
