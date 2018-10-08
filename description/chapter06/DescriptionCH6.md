@@ -9,6 +9,8 @@
 fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
 ```
 
+## 6-2 Promise
+
 ### Promise
 
 #### .then( source )
