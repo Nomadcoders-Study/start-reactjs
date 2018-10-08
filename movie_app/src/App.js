@@ -11,7 +11,7 @@ class App extends Component {
 
   componentDidMount(){
     fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
-    .then()
+    .then(response => console.log(response))
     .catch(err => console.log(err))
   }
 
