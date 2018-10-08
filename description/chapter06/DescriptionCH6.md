@@ -11,13 +11,21 @@ fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
 
 ### Promise
 
-> 자바스크립트 비동기 처리에 사용 되는 객체
+1. 자바스크립트 비동기 처리에 사용 되는 객체
 
-### .then( source )
+2. 시나리오를 세우고 이를 관리 할 수 있다.
+
+### 1. 자바스크립트 비동기 처리
+
+??
+
+### 2. 시나리오 생성 / 관리 역할
+
+#### .then( source )
 
 > 앞 라인의 로직이 수행 된 후 source를 수행 하도록 한다.
 
-### .catch( source )
+#### .catch( source )
 
 > 앞 라인의 로직 수행 중 에러 발생시 source를 수행 하도록 한다.
 
