@@ -13,6 +13,8 @@ fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
 
 ### Promise
 
+> Promise 객체는 비동기 처리를 위해 사용 되며, 나중에 완료될 것으로 약속 된 연산을 구현 한다.  
+
 #### .then( source )
 
 > 앞 라인의 로직이 수행 된 후 source를 수행 하도록 한다.
