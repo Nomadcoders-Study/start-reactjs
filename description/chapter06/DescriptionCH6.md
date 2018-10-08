@@ -33,3 +33,24 @@ componentDidMount(){
 오류 발생 시 오류 내용을 console.log로 출력 하라.
 
 
+
+> .json() : 해당 데이터를 json형식의 데이터로 변환 한다.
+
+```
+fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
+    .then(response => response.json())
+    .then(json => console.log(json))
+    .catch(err => console.log(err))
+```
+
+- .then(response => response.json())  
+: 앞 로직(fetch)이 수행 된 후 fetch의 결과물을 response변수에 담은 후 json형태로 변환 한다.
+
+- .then(json => console.log(json))  
+: 변환 되어 반환 한 후 해당 값을 json 변수에 담은 후 console.log로 출력 한다.  
+
+- .catch(err => console.log(err))  
+: 앞의 작업 중 오류 발생시 해당 오류를 console.log로 출력 한다.
+
+![결과물](../../DescImages/ch6-2-001.png)
+
