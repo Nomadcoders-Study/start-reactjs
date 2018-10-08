@@ -21,5 +21,15 @@ fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
 
 > 앞 라인의 로직 수행 중 에러 발생시 source를 수행 하도록 한다.
 
+```
+componentDidMount(){
+    fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
+    .then(response => console.log(response))
+    .catch(err => console.log(err))
+  }
+```
+
+- fetch(url) 의 통신이 완료 되면, 통신 결과를 response에 담아 console.log로 출력 하고,  
+오류 발생 시 오류 내용을 console.log로 출력 하라.
 
 
