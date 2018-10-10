@@ -1,6 +1,7 @@
 # # Ch1 시작하기
 > ##### [ 강의 출처 ] [NOMAD CODERS](https://academy.nomadcoders.co/) ["ReactJS로 웹 서비스 만들기"](https://academy.nomadcoders.co/courses/enrolled/216871) Chapter #1 시작하기
 
+> ["ReactJS로 웹 서비스 만들기 : Chapter #1 시작하기”](https://academy.nomadcoders.co/courses/enrolled/216871) by [NOMAD CODERS](https://academy.nomadcoders.co/)
 
 ## 필수 설치 내역
 1. npm
