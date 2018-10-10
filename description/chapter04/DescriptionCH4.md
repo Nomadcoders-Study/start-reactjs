@@ -1,4 +1,9 @@
 # # Ch4 State
+
+> ##### [ 강의 출처 ] ["ReactJS로 웹 서비스 만들기 : Chapter #4 State”](https://academy.nomadcoders.co/courses/enrolled/216871) by [NOMAD CODERS](https://academy.nomadcoders.co/)
+
+----
+
 ## 4-1 Thingking in React: Component State
 
 > State ?? 리액트 컴포넌트 안에 존재 하는 오브젝트  

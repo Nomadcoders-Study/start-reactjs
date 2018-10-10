@@ -1,4 +1,9 @@
 # # Ch2 컴포넌트와 Props
+
+> ##### [ 강의 출처 ] ["ReactJS로 웹 서비스 만들기 : Chapter #2 컴포넌트 그리고 Props”](https://academy.nomadcoders.co/courses/enrolled/216871) by [NOMAD CODERS](https://academy.nomadcoders.co/)
+
+----
+
 ## 2-1 Creating React Components with JSX
 
 > yarn start 를 하게 되면 JS의 모든 코드를 가져와 html 파일에 담는다.

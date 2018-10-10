@@ -1,4 +1,9 @@
 # # Ch5 Stateless Functional Components
+
+> ##### [ 강의 출처 ] ["ReactJS로 웹 서비스 만들기 : Chapter #5 Stateless Functional Components”](https://academy.nomadcoders.co/courses/enrolled/216871) by [NOMAD CODERS](https://academy.nomadcoders.co/)
+
+----
+
 ## 5-1 Smart vs Dumb Components
 
 > 모든 컴포넌트가 state를 가지고 있는 것은 아니다.  

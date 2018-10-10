@@ -1,4 +1,9 @@
 # # Ch3 컴포넌트 Lifecycle
+
+> ##### [ 강의 출처 ] ["ReactJS로 웹 서비스 만들기 : Chapter #3 컴포넌트 Lifecycle”](https://academy.nomadcoders.co/courses/enrolled/216871) by [NOMAD CODERS](https://academy.nomadcoders.co/)
+
+----
+
 ## 3-1 Lifecycle Event on React
 
 ### 3-1-1 Render Lifecycle
