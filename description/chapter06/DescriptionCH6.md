@@ -14,6 +14,8 @@
 fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
 ```
 
+----
+
 ## 6-2 Promise
 
 ### Promise
@@ -61,3 +63,6 @@ fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
 
 ![결과물](../../DescImages/ch6-2-001.png)
 
+----
+
+## 6-3 Async Await in React
