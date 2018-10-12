@@ -39,7 +39,7 @@ fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
 
 ```
 componentDidMount(){
-    fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
+    fetch('https://yts.am/api/v2/list_movies.json?sort_by=rating')
     .then(response => console.log(response))
     .catch(err => console.log(err))
   }
