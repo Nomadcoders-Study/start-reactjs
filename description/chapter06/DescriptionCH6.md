@@ -4,6 +4,13 @@
 
 ----
 
+## 참고
+1. 동기방식 ( Synchronous )
+
+2. 비동기 방식 ( Asynchronous )
+
+----
+
 ## 6-1 Ajax in React
 
 ### Fetch
@@ -66,3 +73,19 @@ fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
 ----
 
 ## 6-3 Async Await in React
+
+- Async : resolve / reject 된 Promise 객체를 리턴하는 함수로 만들어 준다.
+
+- Await : async 함수 내에서만 사용 가능하며,  
+await 키워드가 명시 된 코드 라인의 수행 결과가 완료 될 때까지 일시 정지 된다.
+
+```
+ _getMovies = async () => {
+    const movies = await this._callApi()
+    this.setState({
+      movies
+    })
+  }
+```
+
+> _callApi() 함수의 응답이 완료 될 대 까지 일시 정지 후 완료 되고 나면 다음 코드를 수행 한다.
