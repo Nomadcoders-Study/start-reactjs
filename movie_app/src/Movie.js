@@ -29,9 +29,9 @@ function Movie({title, poster, genres, synopsis}) {
     )
 }
 
-function MoviePoster({poster}) {
+function MoviePoster({poster, alt}) {
     return (
-        <img src={poster}/>
+        <img src={poster} alt={alt} title={alt} className="Movie__Poster"/>
     )
 }
 
