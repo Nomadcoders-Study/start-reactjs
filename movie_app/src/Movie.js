@@ -14,13 +14,15 @@ function Movie({title, poster}) {
 
 function MoviePoster({poster}) {
     return (
-        <img src={ poster } width="150px"/>
+        <img src={ poster }/>
     )
 }
 
 Movie.propTypes = {
     title: PropTypes.string.isRequired,
-    poster: PropTypes.string.isRequired
+    poster: PropTypes.string.isRequired,
+    genres: PropTypes.array.isRequired,
+    synopsis: PropTypes.string.isRequired
 }
 
 MoviePoster.propTypes = {
