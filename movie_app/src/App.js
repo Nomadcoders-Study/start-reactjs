@@ -18,7 +18,7 @@ class App extends Component {
       return <Movie 
         key={movie.id} 
         title={movie.title_english} 
-        poster={movie.small_cover_image} 
+        poster={movie.medium_cover_image} 
         genres={movie.genres}
         synopsis={movie.synopsis}
       />
