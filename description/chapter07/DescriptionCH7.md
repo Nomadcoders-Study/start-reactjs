@@ -5,3 +5,8 @@
 ----
 
 ## 7-1 Updating Movie Component
+
+### HTML Elements Class 셋팅
+
+> 기본 HTML 마크업 에서의 css class 지정은 `class=""` 의 형식으로 지정하지만  
+리액트에서의 class 지정은 `className=""` 의 형식으로 지정한다.
