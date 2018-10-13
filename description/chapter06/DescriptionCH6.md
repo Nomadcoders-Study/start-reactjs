@@ -18,7 +18,7 @@
 > fetch 란? 특정 URL의 네트워크 요청을 쉽게 활용할 수 있도록 해주는 함수
 
 ```
-fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
+fetch('https://yts.am/api/v2/list_movies.json?sort_by=rating')
 ```
 
 ----
@@ -53,7 +53,7 @@ componentDidMount(){
 > .json() : 해당 데이터를 json형식의 데이터로 변환 한다.
 
 ```
-fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
+fetch('https://yts.am/api/v2/list_movies.json?sort_by=rating')
     .then(response => response.json())
     .then(json => console.log(json))
     .catch(err => console.log(err))
